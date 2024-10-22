@@ -1,173 +1,60 @@
-<<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>work1</title>
-    <style>
-      * {
-        border-radius: 10px;
-        margin: 0 auto;
-        padding: 0;
-        box-sizing: border-box;
-
-      }
-      body {
-        background-color: #aac2e2;
-      }
-      #first {
-        margin: auto;
-        display: flex;
-        border: 2px none;
-        justify-content: center;
-      }
-       li {list-style: none; 
-        width:250px; } 
-       #se {border-radius: 10px;
-        margin: 50px auto;
-        max-width:1500px ;
-        max-height: 1500px;
-        display: flex;
-        border: 2px solid rgb(34, 42, 58);
-        padding: 10px;
-        align-items: center; }
-      #contain {display: flex;
-        width: 150px;
-        border-radius: 50%;
-        margin-right: 50px;
-
-      }
-      #boxa {display: flex;
-        align-items: center;
-        justify-content: center;
-        border: 2px none;
-      }
-      
-         .left1 {  margin-left: 300px;  
-        border-radius: 10px;
-        width: 150px;
-        height: 150px;
-         background-color:yellow;} 
-        .center1 {margin-left: 200px; 
-        border-radius: 10px;
-        width: 150px;
-        height: 150px;
-        background-color: pink;} 
-       .right1 {margin-right: 250px;
-        border-radius: 10px; 
-        width: 150px ;
-       height:150px;
-        background-color:  blue;} 
-        .p{margin: 50px;
-          float: left;
-          width:150px;
-          height: 100px;
-          margin-left:300px ;
-          justify-content: center;
-
-        }
-
-
-#last1 {display: flex;
-   border: 2px none;
-        font-weight: 100;
-         width: 1000px; 
-         margin-right:500px;  
-         margin-left: 500px;  
-         justify-content: center;
-       
-}
-
-
-#last {float: left;
-  margin: auto;
-  border: 2px ;
-  font-weight: 100px;
- width: 1000px; 
-  margin-right: 500px;  
-  margin-left: 500px; 
-    
-     justify-content: space-between;
-}
-.i{
-  background-color: rgb(148, 148, 250);
-} 
-.j{
-  background-color: rgb(70, 70, 192);} 
-.k{
-  background-color: rgb(58, 58, 112);} 
-#last2{ margin: 50px auto;
-  display: flex;
-  max-width:1250px ;
-  border: 2px solid rgb(103, 125, 169);
-}
-.button{float:right;
-  background-color: hsl(243, 59%, 69%);
-  border: none;
-  color :white;
-  padding: 15px 32px;
-  text-align: center;
-  font-size: 16px;
-  text-decoration: none;
-  margin :4px 2px;
-  cursor :pointer;
-  margin-right: 500px
-  
-}
-   </style>
-  </head>
-  <body> 
-    <ul id="first">
-      <li>人物介绍</li>
-      <li>系列作品</li>
-      <li>我们相关</a></li>
-    </ul>
-
-    <div id="se"> <img src="images/all.jpg"  id="contain"/>
-      <p>海绵宝宝是一只黄色的方形海绵,住
-        在太平洋深处风光优美无人知道的比基尼海滩水域下。那里是一个没有忧愁的世界,住着一群快乐的海洋生物。</p>
-    </div>
-<div id="boxa">
- <div class="left1">
- <h4>海绵宝宝</h4>
- <p>是动画片《海绵宝宝》系列中的主角，超级活泼可爱，给人带来快乐。</p>
- </div>
-<div class="center1">
-<h4>派大星</h4> 
-<p>粉红色的海星，很可爱和海绵宝宝交情最好。</p> 
- </div>
- <div class="right1">
-<h4>章鱼哥</h4>
- <p>大鼻子章鱼，对艺术有执着的追求，本质上是一个善良且有正义感的章鱼。</p>
- </div>
-</div>  
-<div> <p>
-<img src="images/haimianbaobao.jpg" width="100px" class="p"  />
-<img src="images/paidaxing.jpg" width="100px" class="p" />
-<img src="images/zhangyuge.jpg" width="100px" class="p"/>
-  </p></div>
-  
-  <div id="last1">
-  <div style="display: flex; justify-content: space-between; width: 100%;">
-      <div >系列</div>
-      <div >日期</div>
-      <div >集数</div>
-      </div>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./reset.css">
+</head>
+<body> 
+  <!-- 创建导航条 -->
+  <ul class="nav">
+    <li><a href ="#one">人物介绍</a></li>
+    <li><a href ="#two">系列作品</a></li>
+    <li><a href ="#three">我们相关</a></li>
+   </ul>
+   <!-- 创建人物背景 -->
+  <div class="box1"> 
+    <img src="images/all.jpg"  />    
+    <p class="content">海绵宝宝是一只黄色的方形海绵,住在太平洋深处风光优美无人知道的比基尼海滩水域下。那里是一个没有忧愁的世界,住着一群快乐的海洋生物。</p>
   </div>
-  <div id="last">
- <div style="display: flex; justify-content: space-between; width: 100%;">
-     <div class="i">海绵宝宝</br>海绵宝宝</br>海绵宝宝</br>海绵宝宝</br>海绵宝宝</br></div>
-      <div class="j" >2008年10月23日</br>2008年10月23日</br>2008年10月23日</br>2008年10月23日</br>2008年10月23日</br></div>
-      <div class="k">60集</br>60集</br>60集</br>60集</br>60集</br></div></div>
+    
+<!-- 人物介绍 -->
+  <div class="box2" id="one" >
+    <div class="left1">
+      <h3>海绵宝宝</h3>
+      <p>是动画片《海绵宝宝》系列中的主角，超级活泼可爱，给人带来快乐。</p>
+    </div>
+    <div class="center1">
+      <h3>派大星</h3> 
+      <p>粉红色的海星,很可爱和海绵宝宝交情最好。</p> 
+    </div>
+    <div class="right1">
+      <h3>章鱼哥</h3>
+      <p>大鼻子章鱼，对艺术有执着的追求，本质上是一个善良且有正义感的章鱼。</p>
+    </div>
+  </div>  
+<!-- 图片排版 -->
+  <div class="box3" id="two"> 
+    <img src="images/haimianbaobao.jpg" width="100px" class="p"  />
+    <img src="images/paidaxing.jpg" width="100px" class="p" />
+    <img src="images/zhangyuge.jpg" width="100px" class="p"/>
+  </div>
+ 
+<div class="box4">
+      <div class="ii">系列</div>
+      <div class="jj">日期</div>
+      <div class ="kk">集数</div>
 </div>
-
- 
- 
-<p id="last2">
+<div class="box5">
+    <div class="i">海绵宝宝</br>海绵宝宝</br>海绵宝宝</br>海绵宝宝</br>海绵宝宝</br></div>
+    <div class="j" >2008年10月23日</br>2008年10月23日</br>2008年10月23日</br>2008年10月23日</br>2008年10月23日</br></div>
+    <div class="k">60集</br>60集</br>60集</br>60集</br>60集</br></div></div>
+</div>
+<p class="box6" id="three">
   对我们的建议
-</br></br></br></br></p>
-
+</br></br></br></br></br></br></br></br></p>
 <button class="button">提交</button>
-
-  </body>
+</body>
 </html>
